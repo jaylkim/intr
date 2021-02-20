@@ -1,11 +1,24 @@
 Package: intr
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Convert a time-to-event data to a discrete-time data 
+Version: 0.0.0.9000
+Authors@R:
+  person("Jay", "Kim", email = "jay.luke.kim@gmail.com", role = c("aut", "cre")) 
+Maintainer: Jay Kim <jay.luke.kim@gmail.com>
+Description: This package contains a function that converts a time-to-event data
+             to a discrete-time data. Users can set the length of each bin.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    dplyr,
+    rlang,
+    lubridate,
+    magrittr,
+    purrr,
+    tidyselect,
+    tibble
+RoxygenNote: 7.1.1
